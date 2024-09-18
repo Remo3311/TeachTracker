@@ -32,8 +32,13 @@ ITS a simple website so you can access simply wirh the link
 ALX software engendering
 
 ## Screenshot
+![Screenshot](![Uploading 1.png…]()
+)
+![Screenshot](![2](https://github.com/user-attachments/assets/389f5249-946b-433e-83b8-43ac2909f164)
+)
 
-![Uploading 2.png…]()
+
+
 
 
 
