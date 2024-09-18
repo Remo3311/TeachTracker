@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ccbbce;
+            padding: 20px;
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #7f7f9e;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 20px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #7f7f9e;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        button:hover {
+            background-color: #626281;
+        }
+
+        .action-buttons button {
+            margin-right: 5px;
+        }
+
+        .action-buttons button:last-child {
+            margin-right: 0;
+        }
+
+        .add-assignment-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 18px;
+            font-size: 14px;
+        }
+
+        .completed {
+            background-color: #c8e6c9; /* Stronger green for completed */
+        }
+
+        .not-completed {
+            background-color: #fbe9e7; /* Light red for not completed */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Assignment Tracker</h2>
+
+<table id="assignmentTable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Assignment</th>
+            <th>Date Range</th>
+            <th>Subject</th>
+            <th>Student</th>
+            <th>Completed</th>
+            <th>Completion Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Dynamic rows will be added here -->
+    </tbody>
+</table>
+
+<button class="add-assignment-btn" onclick="addAssignment()">Add Assignment</button>
+
+<script src="assignmentpage.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3e3e55;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 15px 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .home-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        .navbar .profile-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 70px);
+            text-align: center;
+        }
+
+        .card {
+            background-color: #626281;
+            border-radius: 10px;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #7b7fa2;
+            cursor: pointer;
+        }
+
+        .card h2 {
+            margin: 0 0 20px 0;
+            color: #ddd;
+        }
+
+        .card img {
+            width: 70px; /* Increased size */
+            height: 70px; /* Set equal to width for square shape */
+            margin-bottom: 10px;
+            /* Removed background color and padding for a transparent look */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="starting.html">
+            <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home Icon" class="home-icon">
+            Starting!
+        </a>
+        <a href="homepage.html">Homepage</a>
+        <a href="lesson.html">Lesson Plan</a>
+        <a href="student.html">Student Information</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="submissions.html">
+            <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Profile Icon" class="profile-icon">
+        </a>
+    </div>
+
+    <div class="container">
+        <a href="assignmentpage.html" class="card">
+            <h2>Assignments</h2>
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/tic-tac-toe.png" alt="Assignments Icon">
+            <p>Daily Assignment Checklist</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
