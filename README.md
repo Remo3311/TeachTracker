@@ -33,23 +33,24 @@ ALX software engendering
 
 ## Screenshot
 
+![Uploading 2.png…]()
 
 
 
 
 ## Story
 ### Inspiration
-
+the inspiration start when i see someone i know who work as a teacher and being really losst because they cant orgnize there student information
 
 ### Challenges
 Challenge:  
 Code Complexity: Working codes for small tasks was manageable, but I got confused when tackling a big project like this.
 
 ### Future Plans
-In the next iteration, I plan to add a feature for organizing community events and a mobile app to make ShareHood even more accessible.
+In the next iteration, I plan to add a feature for ai chatbot and a mobile app to make teachtrack even more accessible.
 
 ### Technical Details
-The project is built using html css amd javascript 
+The project is built using html css amd javascript and firebase for authantecation
 
 
 ![4105c6f6-13ab-46aa-9c91-bf9040702b28_1080x938](https://github.com/Remo3311/Sharehood-MVP/assets/140193991/c76cdbf9-a331-47c8-81b0-ea282c58da2b)
