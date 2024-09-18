@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Planner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3e3e55;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 15px 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .home-icon {
+            width: 16px; /* Smaller size for the home icon */
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        .navbar .profile-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 70px);
+            text-align: center;
+        }
+
+        .card {
+            background-color: #626281;
+            border-radius: 10px;
+            padding: 50px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin: 0 0 20px 0;
+            color: #e8e8f5;
+            font-size: 24px; /* Adjusted font size */
+        }
+
+        .card p {
+            margin: 0 0 30px 0;
+            color: #ccc;
+            font-size: 18px; /* Adjusted font size */
+        }
+
+        .card:hover {
+            background-color: #7b7fa2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="starting.html">
+            <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Home Icon" class="home-icon">
+            Starting!
+        </a>
+        <a href="homepage.html">Homepage</a>
+        <a href="lesson.html">Lesson Plan</a>
+        <a href="student.html">Student Information</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="submissions.html">
+            <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Profile Icon" class="profile-icon">
+        </a>
+    </div>
+
+    <div class="container">
+        <a href="yearplan.html" class="card">
+            <img src="https://img.icons8.com/ios/50/ffffff/planner.png" alt="Planner Icon" />
+            <h2>Lesson Planning</h2>
+            <p>Yearly Lesson Plan<br>Track & Update</p>
+        </a>
+    </div>
+
+</body>
+
+</html>
