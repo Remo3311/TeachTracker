@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('image/back.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3e3e55;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e3e55;
+        }
+
+        #submission-status {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Let's Work Together for Our Kids' Future</h1>
+        <form id="survey-form">
+            <label for="student-name">Name of the Student:</label>
+            <input type="text" id="student-name" name="student-name" required>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="guardian-name">Guardian Name:</label>
+            <input type="text" id="guardian-name" name="guardian-name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="submission-status"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('survey-form');
+            const submissionStatus = document.getElementById('submission-status');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevents the default form submission
+
+                // Get form values
+                const studentName = document.getElementById('student-name').value;
+                const studentClass = document.getElementById('class').value;
+                const guardianName = document.getElementById('guardian-name').value;
+                const description = document.getElementById('description').value;
+
+                // Create an object to store form data
+                const formData = {
+                    studentName: studentName,
+                    studentClass: studentClass,
+                    guardianName: guardianName,
+                    description: description
+                };
+
+                // Save form data to local storage
+                let storedData = JSON.parse(localStorage.getItem('formResponses')) || [];
+                storedData.push(formData);
+                localStorage.setItem('formResponses', JSON.stringify(storedData));
+
+                // Provide feedback to the user
+                submissionStatus.textContent = 'Thank you for your submission!';
+                form.reset(); // Reset form fields
+            });
+        });
+    </script>
+</body>
+</html>
